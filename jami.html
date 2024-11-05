@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMI-PERSONAL</title>
+    <link rel="stylesheet" href="jami.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Muhammad Hazami</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#container">Home</a></li>
+                        <li><a href="#Portofolio">Portofolio</a></li>
+                        <li><a href="#Resume">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="jamii.jpeg" alt="profil pic">
+                </div>
+                <div class="hero-text">
+                    <h5>HII I'm <span class="input"></span></h5> 
+                    <h1>Muhammad Hazami</h1>
+                    <p>Kalian bisa panggil saya Jami, Umur saya sekarang 16 tahun saya lahir dijakarta
+                        13 juli 2008, saya saat ini sekolah di SMKN 64 jakarta yaitu jurusan RPL,Hobi saya
+                        bermain futsal dan bermain basket, saya suka mendengarkan lagu.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+        <script>
+            var togglebtn=document.querySelector(".togglebtn")
+            var nav=document.querySelector(".navlinks")
+            var links=document.querySelector(".navlinks li")
+
+            togglebtn.addEventListener("click", function(){
+                this.classlist.toggle("click");
+                nav.classlist.toggle("open");
+            })
+            
+            var typed=new Typed(".input",{
+                strings:["Frontend Developer", "Web Developer", "Business Man", "Atlet"],
+                typeSpeed:0,
+                backSpeed:6,
+                loop:true
+            })
+        </script>
+
+<section id="portfolio">
+    <div class="wrapper">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="harimau.jpg" alt="Project 1">
+                <h3>Mandiin Harimau</h3>
+                <p>Saya berhasil memandikan harimau yang imoettt.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="pors.jpg" alt="Project 2">
+                <h3>Membuat Porche RWB</h3>
+                <p>Saya membuat porche rwb dengan tangan kiri saya</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="gajah.jpg" alt="Project 3">
+                <h3> Membuat gajah gemuk dengan makan ketoprak kustom</h3>
+                <p>berhasil karena ketoprak kustom banyak manfaatnya bagi kegendutan gajah</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="resume">
+    <div class="wrapper">
+        <h2>My Resume</h2>
+        <p>Berikut adalah ringkasan pengalaman dan pendidikan saya:</p>
+        <ul>
+            <li><strong>Pendidikan:</strong> SMKN 64 Jakarta, Jurusan RPL</li>
+            <li><strong>Pengalaman Kerja:</strong> Magang di Microsoft, Apple, Nike</li>
+            <li><strong>Keterampilan:</strong> HTML, CSS, JavaScript, dan desain UI/UX</li>
+        </ul>
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="wrapper">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+<footer>
+    <div class="wrapper">
+        <p>&copy; 2023 Muhammad Hazami. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
+</body>
+</html>
